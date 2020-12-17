@@ -138,5 +138,5 @@ class _MyHomePageState extends State<MyHomePage> {
 ````
 If you prefer you can download the example of the previous code from [here](https://github.com/AnnaPS/DniNieValidatorFlutter).
 
-
+<img height="500" alt="" src="https://github.com/AnnaPS/dni_nie_validator/blob/master/validator.gif?raw=true"> 
 
