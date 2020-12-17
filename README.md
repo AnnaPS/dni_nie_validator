@@ -1,6 +1,9 @@
+[![pub package](https://img.shields.io/pub/v/dni_nie_validator.svg)](https://pub.dev/packages/dni_nie_validator)
+[![pub package](https://img.shields.io/apm/l/dni_nie_validator)](https://pub.dev/packages/dni_nie_validator)
+
 # dni_nie_validator
 
-A new Flutter package project.
+Validate if the DNI or NIE entered is valid in format and calculate the corresponding letter.
 
 ## Getting Started
 
@@ -10,6 +13,9 @@ To use the package you have to import it this way:
 import 'package:dni_nie_validator/dni_nie_validator.dart';
 
 ```
+
+## Example
+
 This example shows a Textfield to write the document number and a FAB to validate the document number.
 The ``validateDocument`` method uses the extension functions to validate the text entered in the Textfield. The application will display a Snackbar with the result of the validation.
 
@@ -129,4 +135,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ));
   }
 }
-```
+````
+If you prefer you can download the example of the previous code from [here](https://github.com/AnnaPS/DniNieValidatorFlutter).
+
+
+

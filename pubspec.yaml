@@ -1,8 +1,9 @@
 name: dni_nie_validator
-description: This package helps validate DNI and NIE documents.
+description: A dart package to validate if the DNI or NIE entered is valid in format and calculate the corresponding letter.
 version: 0.0.1
 author: Ana Polo Sánchez
-homepage:
+homepage: https://github.com/AnnaPS/dni_nie_validator
+
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
