@@ -1,5 +1,5 @@
 [![pub package](https://img.shields.io/pub/v/dni_nie_validator.svg)](https://pub.dev/packages/dni_nie_validator)
-[![pub package](https://img.shields.io/apm/l/dni_nie_validator)](https://pub.dev/packages/dni_nie_validator)
+[![pub package](https://img.shields.io/apm/l/package:dni_nie_validator)](https://pub.dev/packages/dni_nie_validator)
 
 # dni_nie_validator
 
