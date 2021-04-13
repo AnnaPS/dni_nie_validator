@@ -1,8 +1,9 @@
 library dni_nie_validator;
 
 extension Dni_Nie_validator on String {
+  /// Validate if the DNI entered is valid in format and calculate the corresponding letter.
   bool isValidDNI() {
-    final String _DNI = "^\\d{8}[a-zA-Z]{1}\$";
+    final String _dni = "^\\d{8}[a-zA-Z]{1}\$";
     List<String> letters = [
       "T",
       "R",
@@ -28,7 +29,7 @@ extension Dni_Nie_validator on String {
       "K",
       "E"
     ];
-    if (RegExp(_DNI, caseSensitive: false, multiLine: false)
+    if (RegExp(_dni, caseSensitive: false, multiLine: false)
         .hasMatch(this.toString())) {
       final letter = letters[(int.parse(this.substring(0, 8)) % 23)];
       if (letter == this.substring(8, 9).toUpperCase().toString()) {
@@ -40,9 +41,10 @@ extension Dni_Nie_validator on String {
     return false;
   }
 
+  /// Validate if the NIE entered is valid in format and calculate the corresponding letter.
   bool isValidNIE() {
     String _nie = "";
-    final String _NIE = "^[XxYyZz]{1}[0-9]{7}[a-zA-Z]{1}\$";
+    final String _nieRegex = "^[XxYyZz]{1}[0-9]{7}[a-zA-Z]{1}\$";
     List<String> letters = [
       "T",
       "R",
@@ -68,7 +70,7 @@ extension Dni_Nie_validator on String {
       "K",
       "E"
     ];
-    if (RegExp(_NIE, caseSensitive: false, multiLine: false)
+    if (RegExp(_nieRegex, caseSensitive: false, multiLine: false)
         .hasMatch(this.toString())) {
       switch (this.substring(0, 1).toUpperCase().toString()) {
         case 'X':
