@@ -34,8 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
   // Create a text controller and use it to retrieve the current value
   // of the TextField.
   final myController = TextEditingController();
-  // Create a global key for your scaffold
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   void dispose() {
@@ -47,7 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey,
       appBar: AppBar(
         title: Text(widget.title),
       ),
@@ -104,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _validation = 'Invalid document';
     }
 
-    _scaffoldKey.currentState.showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text('$_validation'),
       action: SnackBarAction(
         label: 'Accept',
