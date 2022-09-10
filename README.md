@@ -3,7 +3,7 @@
 
 # dni_nie_validator
 
-Validate if the DNI or NIE entered is valid in format and calculate the corresponding letter.
+Validate if the DNI, CIF or NIE entered is valid in format and calculate the corresponding letter.
 
 ## Getting Started
 
